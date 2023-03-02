@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import css from '../Filter/filter.module.css';
 
 function Filter({ filter, onChangeFilter }) {
-  console.log(filter);
   return (
     <label className={css.label}>
       <input
