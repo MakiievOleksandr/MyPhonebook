@@ -1,0 +1,29 @@
+@import '../../../../variables.scss';
+
+.link:global(.active)p {
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.title {
+  margin: 0;
+  padding-right: 20px;
+}
+
+.menuItem {
+  background-image: url('../../../../../assets/images/dirty-sheet-cut.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  color: $primariy-bcg-color;
+  padding: 0 10px;
+}
+
+// .burger {
+//   background-color: rgb(254, 243, 230);
+// }

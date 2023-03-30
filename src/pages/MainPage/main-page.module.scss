@@ -1,0 +1,43 @@
+// body {
+// background-image: url('../../../assets//images/sun-tornado-dark.svg'); /* background by SVGBackgrounds.com */
+// background-repeat: no-repeat;
+// background-size: cover;
+// background-position: center;
+// height: calc(100vh - 21px);
+// }
+
+// .main {
+//   background: url('../../../assets/images/black-old-phone.jpg');
+//   width: 100%;
+//   height: 100vh;
+//   background-position: center;
+//   background-size: contain;
+//   background-repeat: no-repeat;
+// }
+@import '../../variables.scss';
+
+.container {
+  max-width: 1200px;
+  height: 100%;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.welcomeText {
+  font-weight: 300;
+  max-width: 400px;
+  @media screen and (max-width: 320px) {
+    font-size: 18px;
+    padding: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+    padding: 30px;
+  }
+  padding: 50px;
+  font-size: 32px;
+  color: $primary-font-color;
+  background-color: rgba(28, 89, 119, 0.7);
+  border-radius: 20px;
+}

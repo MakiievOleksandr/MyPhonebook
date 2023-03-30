@@ -1,0 +1,62 @@
+.listItem {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-bottom: 1px solid rgb(79, 129, 186);
+  border-radius: 5px;
+}
+
+.listItem:nth-child(2n) {
+  // background-color: rgb(243, 235, 204);
+  opacity: 0.6;
+}
+
+.text {
+  font-weight: 500;
+  font-style: italic;
+  @media screen and (max-width: 320px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 720px) {
+    font-size: 14px;
+  }
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.data {
+  margin-left: 10px;
+}
+
+.contactField {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+
+.editBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  &::after {
+    content: 'Edit';
+    color: green;
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    right: -25px;
+    padding: 5px;
+    opacity: 0;
+    transition: 300ms linear;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}

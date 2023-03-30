@@ -1,0 +1,32 @@
+.paper {
+  background-image: url('../../../../../assets/images/dirty-sheet-cut.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.delBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  &::after {
+    content: 'Delete';
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    right: -40px;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 300ms linear;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
